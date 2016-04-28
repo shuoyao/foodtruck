@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'ginger-logo.png'%}">
+    </a>
+
+    <h1>Hey food truck!</h1>
+    <p>This is a place for Ginger.io team to explore food.</p>
+    <a type="button" class="btn btn-lg btn-default" href="https://gingerslovefood.herokuapp.com/events"><span class="glyphicon glyphicon-calendar"></span> Upcoming Events</a>
+    <a type="button" class="btn btn-lg btn-default" href="https://gingerslovefood.herokuapp.com/vendors"><span class="glyphicon glyphicon-align-justify"></span> Explore Vendors</a>
+    <a type="button" class="btn btn-lg btn-default" href="https://gingerslovefood.herokuapp.com/db"><span class="glyphicon glyphicon-record"></span> View Record</a>
+  </div>
+</div>
+
+  <div class="alert alert-info text-center" role="alert">
+        <li>Created by Sophia Shuo Yao. </li>
+        <li>Thanks to this <a href="https://github.com/heroku/python-getting-started" class="alert-link"> github open source</a> for template.</li>
+  </div>
+        
+</div>
+{% endblock %}

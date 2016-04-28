@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>All vendors in this event:</h1>
+<ul class="list-group">
+{% for vendor,index in data %}
+
+    <a type="button" class="list-group-item" href="{% url 'v' vid=index %}"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> {{ vendor }}
+    </a>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

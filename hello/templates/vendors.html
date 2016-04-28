@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>All vendors information:</h1>
+
+<ul class="list-group">
+{% for vname,index,freq in data %}
+    <a type="button" class="list-group-item" href="{% url 'v' vid=index %}"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> {{vname}} , appeared {{freq}} time(s)</a>
+{% endfor %}
+</ul>
+
+{% endblock %}

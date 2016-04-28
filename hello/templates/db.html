@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<h2>Page View Report</h2>
+
+<ul class="list-group">
+{% for greeting in greetings %}
+
+    <a type="button" class="list-group-item"><span class="glyphicon glyphicon-list-alt"></span> {{ greeting.when }} </a>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

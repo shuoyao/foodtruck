@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>All events in past two year:</h1>
+<ul class="list-group">
+{% for key, value in data %}
+
+    <a type="button" class="list-group-item" href="{% url 'event' id=key%}"><span class="glyphicon glyphicon-list-alt"></span> {{ value }} </a>
+
+{% endfor %}
+</ul>
+
+{% endblock %}
